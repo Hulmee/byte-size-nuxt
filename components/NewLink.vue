@@ -1,5 +1,4 @@
 <template>
-  <pre>{{ link[0] }}</pre>
   <div class=" w-96 mt-10">
     <div class="mockup-browser border bg-base-300">
       <div class="mockup-browser-toolbar">
@@ -15,7 +14,7 @@
         <small>Expires: <span>{{ new Date(link[0].expires_at).toLocaleString('en-AU', {
           day: 'numeric', weekday: 'short', month: 'short',
           year: 'numeric', hour: 'numeric', minute: 'numeric'
-        }) }}</span></small>
+            }) }}</span></small>
       </div>
     </div>
   </div>
