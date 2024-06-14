@@ -12,13 +12,10 @@
 </template>
 
 <script setup>
-// const link = ref([]),
+
 const link = ref([]),
 
     handleChange = (e) => {
-        // getLink(lLink)
-        // link.value = e
-        console.log(e);
         link.value = e
     }
 
@@ -28,7 +25,7 @@ useSeoMeta({
     description: 'Shorten long URLs instantly & manage them easily! Ellery Hulme\'s link shortener, built with Vue.js & Supabase, offers a simple & lightweight solution.',
     ogTitle: 'Efficient Link Shortening with Ellery Hulme',
     ogDescription: 'Discover our lightweight link shortener, created by Ellery Hulme, leveraging Vue.js and Supabase for a seamless experience.',
-    // ogUrl: canonical,
+    ogUrl: 'https://bytsize.link/',
     twitterCard: 'summary',
     keywords: 'link shortener, Vue.js, Supabase, DaisyUI, Tailwind CSS, efficient link shortening, custom CSS, SCSS, Ellery Hulme',
     author: 'Ellery Hulme',
