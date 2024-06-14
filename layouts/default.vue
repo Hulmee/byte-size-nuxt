@@ -1,9 +1,7 @@
 <template>
     <div>
 
-        <Head>
-            <Link rel="canonical" href="http://bytsize.link/" />
-        </Head>
+
         <Nav />
         <main>
             <slot />

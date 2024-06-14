@@ -1,5 +1,9 @@
 <template>
   <section class="flex flex-col justify-center items-center   ">
+
+    <Head>
+      <Link rel="canonical" href="http://bytsize.link/about" />
+    </Head>
     <Hero>About</Hero>
     <div class="join join-vertical text-center w-3/4">
       <div class="collapse collapse-arrow join-item border border-base-300 bg-secondary">

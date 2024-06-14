@@ -1,5 +1,9 @@
 <template>
     <section class=" w-screen pt-3 h-full flex flex-col justify-start items-center">
+
+        <Head>
+            <Link rel="canonical" href="http://bytsize.link/" />
+        </Head>
         <Hero>
             Byte Size Link
         </Hero>
