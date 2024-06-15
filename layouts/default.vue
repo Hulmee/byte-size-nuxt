@@ -1,6 +1,9 @@
 <template>
     <div>
 
+        <Head>
+            <Link rel="canonical" :href="canonical" />
+        </Head>
 
         <Nav />
         <main>
@@ -11,6 +14,10 @@
 </template>
 
 <script setup>
+const route = useRoute(),
+    config = useRuntimeConfig(),
+    canonical = config.public.canonicalURL + route.fullPath
+
 
 </script>
 

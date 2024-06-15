@@ -9,9 +9,24 @@ export default defineNuxtConfig({
       },
     }
   },
+  runtimeConfig: {
+    public: {
+      canonicalURL: process.env.CANONICAL_BASE_URL || 'check Base URL enviroment variable'
+    }
+  },
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', "@nuxtjs/supabase"],
   supabase: {
     redirect: false
+  },
+  tailwindcss:
+  {
+    config: {
+      plugins: [require("daisyui")],
+      daisyui: {
+        themes: ["luxury", "retro"],
+        // themes: [],
+      },
+    }
   }
 })
