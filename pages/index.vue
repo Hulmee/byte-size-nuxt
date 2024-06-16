@@ -14,8 +14,6 @@
 <script setup>
 
 const link = ref([]),
-    config = useRuntimeConfig(),
-
     handleChange = (e) => {
         link.value = e
     }
@@ -23,21 +21,11 @@ const link = ref([]),
 
 useSeoMeta({
     title: 'Byte Size Link',
-<<<<<<< HEAD
-    description: 'Shorten long URLs instantly & manage them easily! Ellery Hulme\'s link shortener, built with  Nuxt.js & Supabase, offers a simple & lightweight solution.',
-    ogTitle: 'Efficient Link Shortening with Ellery Hulme',
-    ogDescription: 'Discover our lightweight link shortener, created by Ellery Hulme, leveraging  Nuxt.js and Supabase for a seamless experience.',
-    // ogUrl: canonical,
-    twitterCard: 'summary',
-    keywords: 'link shortener,  Nuxt.js, Supabase, DaisyUI, Tailwind CSS, efficient link shortening, custom CSS, SCSS, Ellery Hulme',
-=======
     description: 'Shorten long URLs instantly & manage them easily! Ellery Hulme\'s link shortener, built with Nuxt & Supabase, offers a simple & lightweight solution.',
     ogTitle: 'Efficient Link Shortening with Ellery Hulme',
     ogDescription: 'Discover our lightweight link shortener, created by Ellery Hulme, leveraging Nuxt and Supabase for a seamless experience.',
-    ogUrl: config.public.canonicalURL,
     twitterCard: 'summary',
     keywords: 'link shortener, Nuxt, Supabase, DaisyUI, Tailwind CSS, efficient link shortening, custom CSS, SCSS, Ellery Hulme',
->>>>>>> master
     author: 'Ellery Hulme',
     robots: 'index, follow',
 })
