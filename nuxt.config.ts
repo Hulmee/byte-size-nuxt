@@ -9,9 +9,22 @@ export default defineNuxtConfig({
       },
     }
   },
+  site: {
+    url: process.env.CANONICAL_BASE_URL
+  },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', "@nuxtjs/supabase"],
+  modules: ['@nuxtjs/tailwindcss', "@nuxtjs/supabase", "@nuxtjs/seo"],
   supabase: {
     redirect: false
+  },
+  tailwindcss:
+  {
+    config: {
+      plugins: [require("daisyui")],
+      daisyui: {
+        themes: ["luxury", "retro"],
+        // themes: [],
+      },
+    }
   }
 })
