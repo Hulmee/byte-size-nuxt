@@ -2,7 +2,6 @@
   <section class="h-full flex flex-col justify-start items-center">
 
     <Hero>Redirect Page</Hero>
-    <!-- <pre>{{ linkMsg }}</pre> -->
     <pre>{{ link }}</pre>
 
     <span v-if="!linkMsg" class="loading loading-dots loading-lg text-primary mt-2"></span>

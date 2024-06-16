@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: ['@nuxtjs/tailwindcss', "@nuxtjs/supabase", "@nuxtjs/seo"],
   app: {
     head: {
       charset: 'UTF-8',
@@ -9,16 +10,15 @@ export default defineNuxtConfig({
       },
     }
   },
-  runtimeConfig: {
-    public: {
-      canonicalURL: process.env.CANONICAL_BASE_URL || 'check Base URL enviroment variable'
-    }
+  site: {
+    url: process.env.CANONICAL_BASE_URL,
+    defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', "@nuxtjs/supabase"],
   supabase: {
     redirect: false
   },
+
   tailwindcss:
   {
     config: {
@@ -28,5 +28,5 @@ export default defineNuxtConfig({
         // themes: [],
       },
     }
-  }
+  },
 })

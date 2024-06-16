@@ -26,7 +26,7 @@ useSeoMeta({
     description: 'Shorten long URLs instantly & manage them easily! Ellery Hulme\'s link shortener, built with Nuxt & Supabase, offers a simple & lightweight solution.',
     ogTitle: 'Efficient Link Shortening with Ellery Hulme',
     ogDescription: 'Discover our lightweight link shortener, created by Ellery Hulme, leveraging Nuxt and Supabase for a seamless experience.',
-    ogUrl: config.public.canonicalURL,
+    // ogUrl: config.public.canonicalURL,
     twitterCard: 'summary',
     keywords: 'link shortener, Nuxt, Supabase, DaisyUI, Tailwind CSS, efficient link shortening, custom CSS, SCSS, Ellery Hulme',
     author: 'Ellery Hulme',
