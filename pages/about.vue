@@ -19,7 +19,11 @@
           Our Approach:
         </div>
         <div class="collapse-content text-left text-accent-content">
+<<<<<<< HEAD
           <p>In a sea of link shorteners, I wanted to keep things simple. No complex backend here just Nuxt.js
+=======
+          <p>In a sea of link shorteners, I wanted to keep things simple. No complex backend here just Nuxt
+>>>>>>> master
             and Supabase handling the heavy lifting. By focusing on frontend logic and leveraging Supabase
             for storage, we've created a lightweight, efficient solution.</p>
         </div>
@@ -41,14 +45,22 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
 
 useSeoMeta({
   title: 'About - Byte Size Link - By Ellery Hulme\'s',
   description: 'Learn about Ellery Hulme\'s journey from custom CSS/SCSS to using DaisyUI with Tailwind CSS for efficient link shortening.',
   ogTitle: 'About Ellery Hulme\'s Link Shortening Project',
   ogDescription: 'Discover the evolution of our link shortener from custom CSS/SCSS to using DaisyUI with Tailwind CSS. Meet Ellery Hulme, the developer committed to clean code and user-friendly design.',
+<<<<<<< HEAD
   twitterCard: 'summary',
   keywords: 'about link shortener,  Nuxt.js, Supabase, DaisyUI, Tailwind CSS, developer story, custom CSS, SCSS, Ellery Hulme',
+=======
+  ogUrl: `${config.public.canonicalURL}about/`,
+
+  twitterCard: 'summary',
+  keywords: 'about link shortener, Nuxt, Supabase, DaisyUI, Tailwind CSS, developer story, custom CSS, SCSS, Ellery Hulme',
+>>>>>>> master
   author: 'Ellery Hulme',
   robots: 'index, follow',
 

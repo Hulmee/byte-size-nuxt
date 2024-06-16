@@ -9,8 +9,15 @@ export default defineNuxtConfig({
       },
     }
   },
+<<<<<<< HEAD
   site: {
     url: process.env.CANONICAL_BASE_URL
+=======
+  runtimeConfig: {
+    public: {
+      canonicalURL: process.env.CANONICAL_BASE_URL || 'check Base URL enviroment variable'
+    }
+>>>>>>> master
   },
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', "@nuxtjs/supabase", "@nuxtjs/seo"],
