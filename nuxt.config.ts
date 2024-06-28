@@ -11,8 +11,13 @@ export default defineNuxtConfig({
     }
   },
   site: {
-    url: process.env.CANONICAL_BASE_URL,
+    url: process.env.CANONICAL_BASE_URL || "https://www.bytesz.link/",
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
+    name: 'Byte Size Link'
+  },
+  robots: {
+    disallow: ['/_nuxt', '/login', '/confirm'],
+    allow: ['/', '/about']
   },
   devtools: { enabled: true },
   supabase: {
@@ -25,7 +30,6 @@ export default defineNuxtConfig({
       plugins: [require("daisyui")],
       daisyui: {
         themes: ["luxury", "retro"],
-        // themes: [],
       },
     }
   },
